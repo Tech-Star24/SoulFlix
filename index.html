@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Soul Flix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    
+    <header>
+        <a href="#" class="logo">
+            <i class='bx bxs-movie-play'></i></i> Soul Flix
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#trending">Trending</a></li>
+        </ul>
+
+        <a href="login.html" class="btn" > Sign In</a>
+    </header>
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img src="images/wakanda.jpg" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Black panther<br>Wakanda Forever</h1>
+                    <a href="#" class="btn" value="BlackPantherWakandaForever" onclick="showMovie(this.value)">Watch Now</a>
+                    <a href="#" class="play" value="BlackPantherWakandaForever" onclick="showMovie(this.value)">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="images/avengers.jpg" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Avengers:<br>Endgame</h1>
+                    <a href="#" class="btn" value="AvengersEndgame" onclick="showMovie(this.value)">Watch Now</a>
+                    <a href="#" class="play" value="AvengersEndgame" onclick="showMovie(this.value)">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="images/spidy.jpg" alt="">
+                <div class="home-text">
+                    <span>Marvel Universe</span>
+                    <h1>Spider-Man:<br>No Way Home</h1>
+                    <a href="#" class="btn" value="SpiderManNoWayHome" onclick="showMovie(this.value)">Watch Now</a>
+                    <a href="#" class="play" value="SpiderManNoWayHome" onclick="showMovie(this.value)">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <section class="trendingh" id="trendingh">
+        <h2 class="heading">Trending</h2>
+    </section>
+    <section class="trending" id="trending">
+
+        <div class="trending-container swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/conjuring.jpg" value="Conjuring" onclick="showMovie(this.value)">
+                        <div class="home-text">
+                            <span>
+                                <h2>#1</h2>
+                            </span>
+                        </div>
+                    </div>
+                    <h3>Conjuring</h3>
+                    <span>120 min | Horror</span>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/conjuring2.jpg" value="Conjuring2" onclick="showMovie(this.value)">
+                        <div class="home-text">
+                            <span>
+                                <h2>#2</h2>
+                            </span>
+                        </div>
+                    </div>
+                    <h3>Conjuring 2</h3>
+                    <span>120 min | Horror</span>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/conjuring3.jpg" value="Conjuring3" onclick="showMovie(this.value)">
+                        <div class="home-text">
+                            <span>
+                                <h2>#3</h2>
+                            </span>
+                        </div>
+                    </div>
+                    <h3>Conjuring 3</h3>
+                    <span>120 min | Horror</span>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/annabellech.jpg" value="AnabelleComesHome" onclick="showMovie(this.value)">
+                        <div class="home-text">
+                            <span>
+                                <h2>#4</h2>
+                            </span>
+                        </div>
+                    </div>
+                    <h3>Annabelle Comes Home</h3>
+                    <span>120 min | Horror</span>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/warz.jpg" value="WorldWarZ" onclick="showMovie(this.value)">
+                        <div class="home-text">
+                            <span>
+                                <h2>#5</h2>
+                            </span>
+                        </div>
+                    </div>
+                    <h3>World War Z</h3>
+                    <span>120 min | Horror</span>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/traintobusan.jpg" value="TrainToBusan" onclick="showMovie(this.value)">
+                        <div class="home-text">
+                            <span>
+                                <h2>#6</h2>
+                            </span>
+                        </div>
+                    </div>
+                    <h3>Train To Busan</h3>
+                    <span>120 min | Horror</span>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/hereditary.jpg" value="Hereditary" onclick="showMovie(this.value)">
+                        <div class="home-text">
+                            <span>
+                                <h2>#7</h2>
+                            </span>
+                        </div>
+                    </div>
+                    <h3>Hereditary</h3>
+                    <span>120 min | Horror</span>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/sinister.jpg" value="Sinister" onclick="showMovie(this.value)">
+                        <div class="home-text">
+                            <span>
+                                <h2>#8</h2>
+                            </span>
+                        </div>
+                    </div>
+                    <h3>Sinister</h3>
+                    <span>120 min | Horror</span>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/1920.jpg" value="1920" onclick="showMovie(this.value)">
+                        <div class="home-text">
+                            <span>
+                                <h2>#9</h2>
+                            </span>
+                        </div>
+                    </div>
+                    <h3>1920</h3>
+                    <span>120 min | Horror</span>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/1920er.jpg" value="1920EvilReturn" onclick="showMovie(this.value)">
+                        <div class="home-text">
+                            <span>
+                                <h2>#10</h2>
+                            </span>
+                        </div>
+                    </div>
+                    <h3>1920 Evil Returns</h3>
+                    <span>120 min | Horror</span>
+                </div>
+            </div>
+    </section>
+    <section class="horror-moviesh" id="horror-moviesh">
+        <h2 class="heading">Horror</h2>
+    </section>
+    <section class="horror-movies" id="movies">
+
+        <div class="movies-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/conjuring.jpg" value="Conjuring" onclick="showMovie(this.value)">
+                </div>
+                <h3>Conjuring</h3>
+                <span>120 min | Horror</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/conjuring2.jpg" value="Conjuring2" onclick="showMovie(this.value)">
+                </div>
+                <h3>Conjuring 2</h3>
+                <span>120 min | Horror</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/conjuring3.jpg" value="Conjuring3" onclick="showMovie(this.value)">
+                </div>
+                <h3>Conjuring 3</h3>
+                <span>120 min | Horror</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/annabellech.jpg" value="AnabelleComesHome" onclick="showMovie(this.value)">
+                </div>
+                <h3>Annabelle Comes Home</h3>
+                <span>120 min | Horror</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/warz.jpg" value="WorldWarZ" onclick="showMovie(this.value)">
+                </div>
+                <h3>World War Z</h3>
+                <span>120 min | Horror</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/traintobusan.jpg" value="TrainToBusan" onclick="showMovie(this.value)">
+                </div>
+                <h3>Train To Busan</h3>
+                <span>120 min | Horror</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/hereditary.jpg" onclick="showMovie('Hereditary')">
+                </div>
+                <h3>Hereditary</h3>
+                <span>120 min | Horror</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/sinister.jpg" onclick="showMovie('Sinister')">
+                </div>
+                <h3>Sinister</h3>
+                <span>120 min | Horror</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/1920.jpg" onclick="showMovie('1920')">
+                </div>
+                <h3>1920</h3>
+                <span>120 min | Horror</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/1920er.jpg" onclick="showMovie('1920EvilReturn')">
+                </div>
+                <h3>1920 Evil Returns</h3>
+                <span>120 min | Horror</span>
+            </div>
+        </div>
+    </section>
+    <section class="sci-fi moviesh" id="sci-fi moviesh">
+        <h2 class="heading">Sci-fi</h2>
+    </section>
+    <section class="sci-fi movies" id="movies">
+
+        <div class="movies-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/transformers.jpg" value="Transformers" onclick="showMovie(this.value)">
+                </div>
+                <h3>Transformers</h3>
+                <span>120 min | Sci-fi</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/transformersrevengeofthefallen.jpg" value="Transformers2" onclick="showMovie(this.value)">
+                </div>
+                <h3>Transformers : Revenge Of The Fallen</h3>
+                <span>120 min | Sci-fi</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/transformersdarkofthemoon.jpg" value="Transformers3" onclick="showMovie(this.value)">
+                </div>
+                <h3>Transformers : Dark Of THe Moon</h3>
+                <span>120 min | Sci-fi</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/transformersageofextinction.jpg" value="Transformers4" onclick="showMovie(this.value)">
+                </div>
+                <h3>Transformers : Age Of Extinction</h3>
+                <span>120 min | Sci-fi</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/transformersthelastknight.jpg" value="Transformers5" onclick="showMovie(this.value)">
+                </div>
+                <h3>Transfromers : The Last Knight</h3>
+                <span>120 min | Sci-fi</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/bumblebee.jpg" value="Bumblebee" onclick="showMovie(this.value)">
+                </div>
+                <h3>Bumblebee</h3>
+                <span>120 min | Horror</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Battleship.jpg" value="Battleship" onclick="showMovie(this.value)">
+                </div>
+                <h3>Battleship</h3>
+                <span>120 min | Sci-fi</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/avengersiw.jpg" onclick="showMovie(AvengersInfinityWar)">
+                </div>
+                <h3>Avengers Infinity War</h3>
+                <span>120 min | Sci-fi</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/aendg.jpg" onclick="showMovie('AvengersEndgame')">
+                </div>
+                <h3>Avengers Endgame</h3>
+                <span>120 min | Sci-fi</span>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/drstrange.jpg" value="DrStrange" onclick="showMovie(this.value)">
+                </div>
+                <h3>Dr. Strange : Multiverse of Madness</h3>
+                <span>120 min | Sci-fi</span>
+            </div>
+        </div>
+    </section>
+    <section class=""></section>
+    <section class="n" id="n">
+        <div class="footer">
+            <a href="#" class="logo">
+                <i class='bx bxs-movie-play'></i> Soul Flix
+            </a>
+            <div class="social">
+                <a href="#">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="design.js"></script>
+</body>
+</html>
